@@ -4,5 +4,51 @@
 }
 
 body {
-    background-color: skyblue;
+    overflow: hidden;
+}
+
+/* 颜色按钮组样式 */
+.color-buttons {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.color-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+.color-btn.active {
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 具体颜色按钮 */
+.color-btn.blue {
+    background-color: #4AA5FF;
+}
+
+.color-btn.burgundy {
+    background-color: #8B1F41;
+}
+
+.color-btn.olive {
+    background-color: #6B705C;
+}
+
+.color-btn.silver {
+    background-color: #D3D3D3;
+}
+
+.color-btn.purple {
+    background-color: #6B4E71;
 }
